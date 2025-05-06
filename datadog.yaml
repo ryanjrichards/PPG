@@ -22,6 +22,6 @@ logs_enabled: true
 #
 tags:
   - env:uat
-  - service: database
-  - version: 1
+  - service:database
+  - version:1
   - <TAG_KEY>:<TAG_VALUE>
