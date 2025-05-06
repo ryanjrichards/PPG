@@ -5,10 +5,20 @@
 ## Read more about API keys here: https://docs.datadoghq.com/account_management/api-app-keys/#api-keys .
 api_key: <API_KEY>
 
+apm_config:
+  enabled: true
+  receiver_port: 8126
+
+process_config:
+  enabled: true
+
 ## @param logs_enabled - boolean - optional - default: false
 ## @env DD_LOGS_ENABLED - boolean - optional - default: false
 ## Enable Datadog Agent log collection by setting logs_enabled to true.
 logs_enabled: true
+
+logs_config:
+  use_http: true
 
 ## @param tags  - list of key:value elements - optional
 ## @env DD_TAGS - space separated list of strings - optional
@@ -25,3 +35,5 @@ tags:
   - service:database
   - version:1
   - <TAG_KEY>:<TAG_VALUE>
+
+
